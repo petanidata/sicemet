@@ -14,152 +14,183 @@
         <header>
             <div class="shadow mb-5 bg-white rounded" style="width: auto;">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Sicemet</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="sicemet.html"><b>SiCeMet</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="kelompok.html">Kelompok 1 INF B/P1</a>
+                        </li>
+                    </ul>
+                </div>
               </nav>
             </div>
         </header>
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="shadow mb-5 bg-white rounded" style="width: 46rem; height: auto; padding: 0;"></div>
-                <div class="card" style="width: 46rem; height: auto;">
+                <div class="shadow mb-5 bg-white rounded" style="width: 64rem; height: auto; padding: 0;"></div>
+                <div class="card mb-4" style="width: 64rem; height: auto;">
                     <div class="card-header" style="text-align: center;">
-                      Kenali Proyek Anda
+                      <b>Pilih Metode Anda</b>
                     </div>
-                    <div class="col-lg" style="padding-top: 1rem; padding-bottom: 1rem;">
+                    <select class="custom-select" name="metode" id="metode">
+                        <option selected>Pilih Metode Anda</option>
+                        <option value="incremental">Incremental</option>
+                        <option value="prototype">Prototype</option>
+                        <option value="rad">RAD</option>
+                        <option value="scrum">Scrum</option>
+                        <option value="spiral">Spiral</option>
+                        <option value="vshaped">VShaped</option>
+                        <option value="waterfall">Waterfall</option>
+                      </select>
+                      <button type="button" class="btn btn-success" onclick="tampil()">Pilih</button>
+                </div>
+
+                <div class="card" style="width: 64rem; height: auto;">
+                    <div class="card-header" style="text-align: center;">
+                      <b>Kenali Proyek Anda</b>
+                    </div>
+                    <div class="table-responsive">
+                    <!--<table class="" border=1 height=300px></table>-->
+                    <table class="table" height=300px>
                         <form>
-                            <!--- Kebutuhan -->
-                            <div class="form-row">
-                                <div class="col-sm-3">
-                                    <p>Kebutuhan : </p>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-check form-check-inline">
+                            <tr><!--- Kompleksitas -->
+                                <td>Kebutuhan</td>
+                                <td>:</td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="kebutuhan" id="dapat-dijelaskan" value="dapat-dijelaskan">
                                         <label class="form-check-label" for="dapat-dijelaskan">Dapat dijelaskan</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="kebutuhan" id="belum-jelas" value="belum-jelas">
                                         <label class="form-check-label" for="belum-jelas">Belum jelas</label>
                                     </div>
-                                </div>
-                            </div>
-
-                            <!--- Kompleksitas -->
-                            <div class="form-row">
-                                <div class="col-sm-3">
-                                    <p>Kompleksitas : </p>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-check-inline">
+                                </td>				
+                            </tr>
+                            <tr><!--- Kebutuhan -->
+                                <td>Kompleksitas</td>
+                                <td>:</td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="kompleksitas" id="sederhana" value="sederhana">
                                         <label class="form-check-label" for="sederhana">Sederhana</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="kompleksitas" id="kompleks" value="kompleks">
                                         <label class="form-check-label" for="kompleks">Kompleks</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="kompleksitas" id="sangat-kompleks" value="sangat-kompleks">
                                         <label class="form-check-label" for="sangat-kompleks">Sangat Kompleks</label>
                                     </div>
-                                </div>
-                            </div>
-                            
-                            <!--- Waktu delivery -->
-                            <div class="form-row">
-                                <div class="col-sm-3">
-                                    <p>Waktu delivery : </p>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-check-inline">
+                                </td>
+                            </tr>                            
+                            <tr><!--- Waktu delivery -->
+                                <td>Waktu delivery</td>
+                                <td>:</td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="waktu-delivery" id="<1bulan" value="<1bulan">
-                                        <label class="form-check-label" for="<1bulan">< 1 bulan</label>
+                                        <label class="form-check-label" for="<1bulan"> < 1 bulan</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="waktu-delivery" id="1-3bulan" value="1-3bulan">
                                         <label class="form-check-label" for="1-3bulan">1-3 bulan</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="waktu-delivery" id="4-6bulan" value="4-6bulan">
                                         <label class="form-check-label" for="4-6bulan">4-6 bulan</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="waktu-delivery" id="6-12bulan" value="6-12bulan">
                                         <label class="form-check-label" for="6-12bulan">6-12 bulan</label>
                                     </div>
-                                </div>
-                            </div>
-                            
-                            <!--- Jumlah Tim -->
-                            <div class="form-row">
-                                <div class="col-sm-3">
-                                    <p>Jumlah tim (SDM) : </p>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-check-inline">
+                                </td>
+                            </tr>
+                            <tr><!--- Jumlah Tim -->
+                                <td>Jumlah tim (SDM)</td>
+                                <td>:</td>
+
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="jumlah-tim" id="<12orang" value="<12orang">
                                         <label class="form-check-label" for="<12orang"> < 12 orang</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="jumlah-tim" id=">12orang" value=">12orang">
                                         <label class="form-check-label" for=">12orang"> > 12 orang</label>
                                     </div>
-                                </div>
-                            </div>
-
-                            <!--- Keterampilan Tim -->
-                            <div class="form-row">
-                                <div class="col-sm-3">
-                                    <p>Keterampilan tim : </p>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-check-inline">
+                                </td>				
+                            </tr>
+                            <tr><!--- Keterampilan Tim -->
+                                <td>Keterampilan tim</td>
+                                <td>:</td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="keterampilan-tim" id="berpengalaman" value="berpengalaman">
                                         <label class="form-check-label" for="berpengalaman">Berpengalaman</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="keterampilan-tim" id="campuran" value="campuran">
                                         <label class="form-check-label" for="campuran">Campuran</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="keterampilan-tim" id="sangat-berpengalaman" value="tidak-berpengalaman">
                                         <label class="form-check-label" for="sangat-berpengalaman">Tidak berpengalaman</label>
                                     </div>
-                                </div>
-                            </div>
+                                </td>
+                            </tr>
+                            <tr><!--- Keterlibatan klien -->
+                                <td>Klien Terlibat Langsung</td>
+                                <td>:</td>
 
-                            <!--- Keterlibatan klien -->
-                            <div class="form-row">
-                                <div class="col-sm-3">
-                                    <p>Klien terlibat langsung : </p>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-check-inline">
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="klien-terlibat" id="terlibat" value="terlibat">
                                         <label class="form-check-label" for="terlibat">Terlibat</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                </td>
+                                <td>
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="klien-terlibat" id="tidak-terlibat" value="tidak-terlibat">
                                         <label class="form-check-label" for="tidak-terlibat">Tidak terlibat</label>
                                     </div>
-                                </div>
+                                </td>				
+                            </tr> 
+                    </form>
+                    </table>
+                </div>
+                    <!--- Button -->
+                    <div class="row justify-content-center" style="margin-bottom: 20px; margin-top: 20px;">
+                        <div class="form-row">
+                            <div class="col-sm-2" style="margin-right: 5rem;">
+                                <button type="button" class="btn btn-light" onclick="location.reload()">Bersihkan</button>
                             </div>
-
-                            <!--- Button -->
-                            <div class="row justify-content-center">
-                                <div class="form-row">
-                                    <div class="col-sm-2" style="margin-right: 5rem;">
-                                        <button type="button" class="btn btn-light" onclick="location.reload()">Bersihkan</button>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="btn btn-success" onclick="decission()">Cek</button>
-                                </div>
+                            <div class="col-sm-2">
+                                <button type="button" class="btn btn-success" onclick="decission()">Cek</button>
                             </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -177,8 +208,5 @@
                 </div>
             </div>
         </div>
-    
-    </main>
-
     </body>
 </html>
