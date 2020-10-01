@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Incremental</title>
+        <!-- CSS only -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow mb-1 bg-white rounded ">
+                <a class="navbar-brand" href="index.html">Sicemet</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Incremental <span class="sr-only">(current)</span></a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <h3 style="margin-bottom: 2rem; margin-top: 5rem;">Metodologi yang cocok untuk project anda adalah: <b>Incremental</b></h3>
+                <div class="shadow mb-5 bg-white rounded" style="width: 50rem;">
+                    <div class="card" style="width: 50rem;">
+                        <img class="card-img-top" src="img/incremental.png" alt="Card image cap" height="430">
+                        <div class="card-body">
+                        <p class="card-text">
+                            &nbsp;&nbsp;&nbsp;Incremental model adalah model pengembangan sistem pada software development berdasarkan requirement 
+                            software yang dipecah menjadi beberapa fungsi atau bagian sehingga model pengembangannya secara bertahap. 
+                            Tahap – tahap pada incremental model, yaitu:
+                            <ol>
+                                <li>Requirement: proses penentuan kebutuhan atau analisis kebutuhan.</li>
+                                <li>Specification: proses spesifikasi dimana menggunakan analisis kebutuhan sebagai acuannya.</li>
+                                <li>Architecture Design: perancangan software yang terbuka agar dapat diterapkan sistem pembangunan per-bagian pada tahapan selanjutnya.</li>
+                                <li>Code: melakukan koding.</li>
+                                <li>Test: melakukan testing dalam model ini.</li>
+                            </ol>
+                            Model ini cocok dipakai saat:
+                            <ol>
+                                <li>Proyek kecil dengan anggota tim yang sedikit dan ketersediaan waktu yang terbatas.</li>
+                                <Li>Jadwal pendanaan, resiko, kompleksitas program, atau kebutuhan realisasi manfaat lebih awal.</Li>
+                                <li>Ketika persyaratan diketahui di awal.</Li>
+                                <li>Saat proyek memiliki jadwal pengembangan yang panjang.</li>
+                                <li>Proyek dengan menggunakan teknologi terbaru</li>
+                            </ol>
+                            Beberapa kelebihan dari mode incremental atara lain
+                            <ol>
+                                <li>Merupakan model dengan manajemen yang sederhana.</li>
+                                <li>Pengguna tidak perlu menunggu sampai seluruh sistem dikirim untuk mengambil keuntungan dari sistem tersebut.
+                                Increment yang pertama sudah memenuhi persyaratan mereka yang paling kritis, sehingga perangkat lunak dapat segera digunakan.</li>
+                                <li>Resiko untuk kegagalan proyek secara keseluruhan lebih rendah. Walaupun masalah masih dapat ditemukan pada beberapa increment. 
+                                Karena layanan dengan prioritas tertinggi diserahkan pertama dan increment berikutnya diintegrasikan dengannya, sangatlah penting 
+                                bahwa layanan sistem yang paling penting mengalami pengujian yang ketat. Ini berarti bahwa pengguna akan memiliki 
+                                kemungkinan kecil untuk memenuhi kegagalan perangkat lunak pada increment sistem yang paling bawah.
+                                <li>Nilai penggunaan dapat ditentukan pada setiap increment sehingga fungsionalitas sistem disediakan lebih awal.</li>
+                                <li>Memiliki risiko lebih rendah terhadap keseluruhan pengembagan sistem.</li>
+                                <li>Prioritas tertinggi pada pelayanan sistem adalah yang paling diuji.</li>                            
+                            </ol>
+                            Kelemahannya adalah:
+                            <ol>
+                                <li>Kemungkinan tiap bagian tidak dapat diintegrasikan.</li>
+                                <li>Dapat menjadi build and fix model, karena kemampuannya untuk selalu mendapat perubahan selama proses rekayasa berlangsung.</li>
+                                <li>Harus open architecture.</li>
+                                <li>Mungkin terjadi kesulitan untuk memetakan kebutuhan pengguna ke dalam rencana spesifikasi masing-masing hasil increment.</li>
+                                <li>Membutuhkan waktu yang relative lama untuk menghasilan produk yang lengkap</li>
+                            </ol>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="form-inline" action="index.html" style="margin-bottom:20px; margin-right:20px;">
+                <button type="submit" class="btn btn-info ml-auto">Kembali ke List Metodologi</button>
+            </form>
+        </div>
+    </body>
+</html>
