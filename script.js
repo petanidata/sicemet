@@ -15,52 +15,9 @@ function getter(){
     klien_terlibat = document.querySelector('input[name="klien-terlibat"]:checked').value;
 }
 
-function clear_Variable(){
-    alert(kebutuhan);
-    alert(kompleksitas);
-    alert(waktu_delivery);
-    alert(jumlah_tim);
-    alert(keterampilan_tim);
-    alert(klien_terlibat);
-}
-function tampil(){
-    methode = document.getElementById("metode").value;
-    if (methode == "incremental"){
-        window.location.replace("incremental.html");
-    }
-    else if (methode == "prototype"){
-        window.location.replace("prototype.html");
-    }
-    else if (methode == "rad"){
-        window.location.replace("rad.html");
-    }
-    else if (methode == "scrum"){
-        window.location.replace("scrum.html");
-    }
-    else if (methode == "spiral"){
-        window.location.replace("spiral.html");
-    }
-    else if (methode == "vshaped"){
-        window.location.replace("vshaped.html");
-    }
-    else if (methode == "waterfall"){
-        window.location.replace("waterfall.html");
-    }
-    else{
-        alert("Pilih Metode");
-    }
-}
 
 function decission(){
-    getter();/*
-    alert(kebutuhan);
-    alert(kompleksitas);
-    alert(waktu_delivery);
-    alert(jumlah_tim);
-    alert(keterampilan_tim);
-    alert(klien_terlibat);
-    console.log(waktu_delivery);
-    //console.log(kebutuhan.kompleksitas.waktu_delivery.jumlah_tim.keterampilan_tim.klien_terlibat);*/
+    getter();
 
     if (kebutuhan == "dapat-dijelaskan"){
         if (kompleksitas == "sederhana"){
