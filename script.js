@@ -1,3 +1,4 @@
+//Preparing the variable to hold form value
 var kebutuhan = "";
 var kompleksitas = "";
 var waktu_delivery = "";
@@ -7,6 +8,8 @@ var klien_terlibat = "";
 
 
 function getter(){
+    
+    //Getting form value
     kebutuhan = document.querySelector('input[name="kebutuhan"]:checked').value;
     kompleksitas = document.querySelector('input[name="kompleksitas"]:checked').value;
     waktu_delivery = document.querySelector('input[name="waktu-delivery"]:checked').value;
@@ -15,53 +18,12 @@ function getter(){
     klien_terlibat = document.querySelector('input[name="klien-terlibat"]:checked').value;
 }
 
-function clear_Variable(){
-    alert(kebutuhan);
-    alert(kompleksitas);
-    alert(waktu_delivery);
-    alert(jumlah_tim);
-    alert(keterampilan_tim);
-    alert(klien_terlibat);
-}
-function tampil(){
-    methode = document.getElementById("metode").value;
-    if (methode == "incremental"){
-        window.location.replace("incremental.html");
-    }
-    else if (methode == "prototype"){
-        window.location.replace("prototype.html");
-    }
-    else if (methode == "rad"){
-        window.location.replace("rad.html");
-    }
-    else if (methode == "scrum"){
-        window.location.replace("scrum.html");
-    }
-    else if (methode == "spiral"){
-        window.location.replace("spiral.html");
-    }
-    else if (methode == "vshaped"){
-        window.location.replace("vshaped.html");
-    }
-    else if (methode == "waterfall"){
-        window.location.replace("waterfall.html");
-    }
-    else{
-        alert("Pilih Metode");
-    }
-}
 
 function decission(){
-    getter();/*
-    alert(kebutuhan);
-    alert(kompleksitas);
-    alert(waktu_delivery);
-    alert(jumlah_tim);
-    alert(keterampilan_tim);
-    alert(klien_terlibat);
-    console.log(waktu_delivery);
-    //console.log(kebutuhan.kompleksitas.waktu_delivery.jumlah_tim.keterampilan_tim.klien_terlibat);*/
-
+    //Running getter function to get the form value
+    getter();
+    
+    //Processing value and display the matching method for the user project
     if (kebutuhan == "dapat-dijelaskan"){
         if (kompleksitas == "sederhana"){
             if (waktu_delivery == "<1bulan"){
