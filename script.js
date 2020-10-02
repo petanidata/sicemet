@@ -52,15 +52,7 @@ function tampil(){
 }
 
 function decission(){
-    getter();/*
-    alert(kebutuhan);
-    alert(kompleksitas);
-    alert(waktu_delivery);
-    alert(jumlah_tim);
-    alert(keterampilan_tim);
-    alert(klien_terlibat);
-    console.log(waktu_delivery);
-    //console.log(kebutuhan.kompleksitas.waktu_delivery.jumlah_tim.keterampilan_tim.klien_terlibat);*/
+    getter();
 
     if (kebutuhan == "dapat-dijelaskan"){
         if (kompleksitas == "sederhana"){
