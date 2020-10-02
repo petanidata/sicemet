@@ -38,7 +38,7 @@ function tampil(){
         window.location.replace("scrum.html");
     }
     else if (methode == "spiral"){
-        window.location.replace("vshaped.html");
+        window.location.replace("spiral.html");
     }
     else if (methode == "vshaped"){
         window.location.replace("vshaped.html");
