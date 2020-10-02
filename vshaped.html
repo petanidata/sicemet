@@ -48,76 +48,82 @@
                             selesainya tahap sebelumnya.<br><br>
                             Ada beberapa tahapan verifikasi di VShaped-Model, masing-masing dijelaskan secara rinci di bawah:
                             <ol>
-                                    <li>Business Requirement Analysis<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ini adalah tahap pertama dalam siklus pengembangan di mana persyaratan produk dipahami 
-                                        dari perspektif pelanggan. Fase ini melibatkan komunikasi rinci dengan pelanggan untuk memahami harapan dan kebutuhan yang tepat. 
-                                        Ini merupakan kegiatan yang sangat penting dan perlu dikelola dengan baik, karena sebagian besar pelanggan tidak yakin 
-                                        tentang apa yang sebenarnya mereka butuhkan Acceptance test desain dilakukan pada tahap ini sebagai kebutuhan bisnis dapat 
-                                        digunakan sebagai masukan untuk pengujian penerimaan.
-                                    </li><br>
-                                    <li>System Design<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setelah Anda memiliki persyaratan produk yang jelas dan rinci, sekarang saatnya untuk 
-                                        merancang sistem yang lengkap. Desain sistem akan memiliki pemahaman dan merinci hardware lengkap dan setup komunikasi untuk
-                                        produk dalam pengembangan. Rencana pengujian sistem dikembangkan berdasarkan desain sistem. Melakukan hal ini pada tahap awal
-                                        membuat lebih banyak waktu untuk pelaksanaan tes yang sebenarnya nanti.
-                                    </li><br>
-                                    <li>Architectural Design<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spesifikasi arsitektur dipahami dan dirancang dalam fase ini. Biasanya lebih dari satu 
-                                        pendekatan teknis diusulkan dan berdasarkan kelayakan teknis dan finansial keputusan akhir diambil. Desain sistem dipecah 
-                                        lebih jauh ke dalam modul mengambil fungsi yang berbeda. Hal ini juga disebut sebagai "Desain Tingkat Tinggi"
-                                    </li><br>
-                                    <li>Module Design<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada fase ini, desain internal rinci untuk semua modul sistem yang ditentukan, 
-                                        disebut "Desain Tingkat Rendah". Penting bahwa desain tersebut kompatibel dengan modul lain dalam arsitektur sistem dan 
-                                        sistem eksternal lainnya.
-                                    </li><br>
-                                    <li>Coding Phase <br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bahasa pemrograman yang paling cocok ditentukan berdasarkan sistem dan persyaratan 
-                                        arsitektur. Pengkodean dilakukan berdasarkan pedoman coding dan standar. Kode berjalan melalui berbagai ulasan kode dan 
-                                        dioptimalkan untuk kinerja terbaik sebelum final membangun diperiksa ke dalam repositori.
-                                    </li>
+                                <li>Business Requirement Analysis<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ini adalah tahap pertama dalam siklus pengembangan di mana persyaratan produk dipahami 
+                                    dari perspektif pelanggan. Fase ini melibatkan komunikasi rinci dengan pelanggan untuk memahami harapan dan kebutuhan yang tepat. 
+                                    Ini merupakan kegiatan yang sangat penting dan perlu dikelola dengan baik, karena sebagian besar pelanggan tidak yakin 
+                                    tentang apa yang sebenarnya mereka butuhkan Acceptance test desain dilakukan pada tahap ini sebagai kebutuhan bisnis dapat 
+                                    digunakan sebagai masukan untuk pengujian penerimaan.
+                                </li><br>
+                                <li>System Design<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setelah Anda memiliki persyaratan produk yang jelas dan rinci, sekarang saatnya untuk 
+                                    merancang sistem yang lengkap. Desain sistem akan memiliki pemahaman dan merinci hardware lengkap dan setup komunikasi untuk
+                                    produk dalam pengembangan. Rencana pengujian sistem dikembangkan berdasarkan desain sistem. Melakukan hal ini pada tahap awal
+                                    membuat lebih banyak waktu untuk pelaksanaan tes yang sebenarnya nanti.
+                                </li><br>
+                                <li>Architectural Design<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spesifikasi arsitektur dipahami dan dirancang dalam fase ini. Biasanya lebih dari satu 
+                                    pendekatan teknis diusulkan dan berdasarkan kelayakan teknis dan finansial keputusan akhir diambil. Desain sistem dipecah 
+                                    lebih jauh ke dalam modul mengambil fungsi yang berbeda. Hal ini juga disebut sebagai "Desain Tingkat Tinggi"
+                                </li><br>
+                                <li>Module Design<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada fase ini, desain internal rinci untuk semua modul sistem yang ditentukan, 
+                                    disebut "Desain Tingkat Rendah". Penting bahwa desain tersebut kompatibel dengan modul lain dalam arsitektur sistem dan 
+                                    sistem eksternal lainnya.
+                                </li><br>
+                                <li>Coding Phase <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bahasa pemrograman yang paling cocok ditentukan berdasarkan sistem dan persyaratan 
+                                    arsitektur. Pengkodean dilakukan berdasarkan pedoman coding dan standar. Kode berjalan melalui berbagai ulasan kode dan 
+                                    dioptimalkan untuk kinerja terbaik sebelum final membangun diperiksa ke dalam repositori.
+                                </li>
                             </ol>
-                                Fase validasi dalam V-Model dijelaskan secara rinci di bawah ini:
+                            Fase validasi dalam V-Model dijelaskan secara rinci di bawah ini:
                             <ol>
-                                    <li>Unit Testing<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit testing adalah pengujian pada tingkat kode dan membantu menghilangkan bug pada
-                                        tahap awal, meskipun semua cacat tidak dapat ditemukan oleh unit testing.
-                                    </li><br>
-                                    <li>Integration Testing<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integration testing dikaitkan dengan fase desain arsitektur. Tes integrasi dilakukan untuk
-                                        menguji koeksistensi dan komunikasi dari modul internal dalam sistem.
-                                    </li><br>
-                                    <li>System Testing<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System testing secara langsung berhubungan dengan tahap desain sistem. System testing memeriksa
-                                        seluruh fungsi sistem dan komunikasi sistem dalam pengembangan dengan sistem eksternal. Sebagian besar perangkat lunak dan perangkat
-                                        keras masalah kompatibilitas dapat ditemukan selama pelaksanaan test ini
-                                    </li><br>
-                                    <li>Acceptance Testing<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acceptance testing dikaitkan dengan tahap analisis kebutuhan bisnis dan melibatkan pengujian produk
-                                        di lingkungan pengguna. Acceptance testing mengungkap masalah kompatibilitas dengan sistem lain yang tersedia di lingkungan pengguna. 
-                                        Juga menemukan masalah non-fungsional seperti beban dan kinerja cacat pada aktual lingkungan pengguna.
-                                    </li><br>
+                                <li>Unit Testing<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit testing adalah pengujian pada tingkat kode dan membantu menghilangkan bug pada
+                                    tahap awal, meskipun semua cacat tidak dapat ditemukan oleh unit testing.
+                                </li><br>
+                                <li>Integration Testing<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integration testing dikaitkan dengan fase desain arsitektur. Tes integrasi dilakukan untuk
+                                    menguji koeksistensi dan komunikasi dari modul internal dalam sistem.
+                                </li><br>
+                                <li>System Testing<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System testing secara langsung berhubungan dengan tahap desain sistem. System testing memeriksa
+                                    seluruh fungsi sistem dan komunikasi sistem dalam pengembangan dengan sistem eksternal. Sebagian besar perangkat lunak dan perangkat
+                                    keras masalah kompatibilitas dapat ditemukan selama pelaksanaan test ini
+                                </li><br>
+                                <li>Acceptance Testing<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acceptance testing dikaitkan dengan tahap analisis kebutuhan bisnis dan melibatkan pengujian produk
+                                    di lingkungan pengguna. Acceptance testing mengungkap masalah kompatibilitas dengan sistem lain yang tersedia di lingkungan pengguna. 
+                                    Juga menemukan masalah non-fungsional seperti beban dan kinerja cacat pada aktual lingkungan pengguna.
+                                </li><br>
                             </ol>
-                                Metodologi Vshaped-Model ini cocok digunakan saat:
+                            Metodologi Vshaped-Model ini cocok digunakan saat:
                             <ol>
-                                    <li>Persayaratan dapat didefinisikan secara jelas dan telah ditetapkan.</li>
-                                    <li>Ketika sumber daya teknis cukup tersedia dengan keahlian teknisnya juga.</li>
+                                <li>Persayaratan dapat didefinisikan secara jelas dan telah ditetapkan.</li>
+                                <li>Ketika sumber daya teknis cukup tersedia dengan keahlian teknisnya juga.</li>
                             </ol>
-                                Kelebihan dari VShaped-Model SDLC:
+                            Kelebihan dari VShaped-Model SDLC:
                             <ol>
-                                    <li>Ini adalah model yang sangat-disiplin dan Tahapan selesai satu per satu.</li>
-                                    <li>Bekerja dengan baik untuk proyek-proyek yang lebih kecil dimana persyaratan dipahami dengan baik.</li>
-                                    <li>Sederhana dan mudah dimengerti dan digunakan.</li>
-                                    <li>Mudah dikelola karena setiap fase memiliki spesifik kiriman dan proses review.</li>
+                                <li>Ini adalah model yang sangat-disiplin dan Tahapan selesai satu per satu.</li>
+                                <li>Bekerja dengan baik untuk proyek-proyek yang lebih kecil dimana persyaratan dipahami dengan baik.</li>
+                                <li>Sederhana dan mudah dimengerti dan digunakan.</li>
+                                <li>Mudah dikelola karena setiap fase memiliki spesifik kiriman dan proses review.</li>
                             </ol>
-                                Kekurangan dari VShaped-Model:
+                            Kekurangan dari VShaped-Model:
                             <ol>
-                                    <li>Berisiko tinggi dan ketidakpastian.</li>
-                                    <li>Tidak cocok untuk proyek-proyek yang kompleks dan berorientasi objek.</li>
-                                    <li>Tidak cocok untuk proyek-proyek dimana persyaratan beresiko tinggi</li>
-                                    <li>Tidak cocok untuk proyek-proyek yang lama dan berkelanjutan.</li>
-                                    <li>Setelah aplikasi dalam tahap pengujian, sulit untuk kembali dan mengubah fungsionalitas.</li>
+                                <li>Berisiko tinggi dan ketidakpastian.</li>
+                                <li>Tidak cocok untuk proyek-proyek yang kompleks dan berorientasi objek.</li>
+                                <li>Tidak cocok untuk proyek-proyek dimana persyaratan beresiko tinggi</li>
+                                <li>Tidak cocok untuk proyek-proyek yang lama dan berkelanjutan.</li>
+                                <li>Setelah aplikasi dalam tahap pengujian, sulit untuk kembali dan mengubah fungsionalitas.</li>
                             </ol>
+                            Sumber:
+                            <ul>
+                                <li>Tutorials Point. SDLC - V-Model. Diakses pada 2 September 2020, dari https://www.tutorialspoint.com/sdlc/sdlc_v_model.htm</li>
+                                <li>GeeksforGeeks. 2019. Software Engineering | SDLC V-Model. Diakses pada 3 September 2020, dari https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/</li>
+                            </ul>
+
                         </p>
                         </div>
                         <form class="form-inline" action="index.html" style="margin-bottom:20px; margin-right:20px;">
