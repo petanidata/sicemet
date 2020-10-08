@@ -1080,5 +1080,7 @@ function decission(){
                 }
             }
         }
+    }else if(kebutuhan == "" || kompleksitas == "" || waktu_delivery == "" || jumlah_tim == "" || keterampilan_tim == "" || klien_terlibat == ""){
+        alert("Harap mengisi semua form");
     }
 }
