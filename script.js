@@ -1,3 +1,4 @@
+//Preparing the variable to hold form value
 var kebutuhan = "";
 var kompleksitas = "";
 var waktu_delivery = "";
@@ -5,7 +6,7 @@ var jumlah_tim = "";
 var keterampilan_tim = "";
 var klien_terlibat = "";
 
-
+//Getting form value
 function getter(){
     kebutuhan = document.querySelector('input[name="kebutuhan"]:checked').value;
     kompleksitas = document.querySelector('input[name="kompleksitas"]:checked').value;
@@ -51,6 +52,7 @@ function tampil(){
     }
 }
 
+//Running getter function to get the form value
 function decission(){
     getter();
 
