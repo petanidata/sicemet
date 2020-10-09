@@ -8,12 +8,51 @@ var klien_terlibat = "";
 
 //Getting form value
 function getter(){
-    kebutuhan = document.querySelector('input[name="kebutuhan"]:checked').value;
-    kompleksitas = document.querySelector('input[name="kompleksitas"]:checked').value;
-    waktu_delivery = document.querySelector('input[name="waktu-delivery"]:checked').value;
-    jumlah_tim = document.querySelector('input[name="jumlah-tim"]:checked').value;
-    keterampilan_tim = document.querySelector('input[name="keterampilan-tim"]:checked').value;
-    klien_terlibat = document.querySelector('input[name="klien-terlibat"]:checked').value;
+    //alert('awal getter');
+    
+    //Checking form value, if user don't fill it, then null
+    if (document.querySelector('input[name="kebutuhan"]:checked')){
+        kebutuhan = document.querySelector('input[name="kebutuhan"]:checked').value;
+    }else {
+        kebutuhan = null;
+    }
+    console.log(kebutuhan);
+    
+    if (document.querySelector('input[name="kompleksitas"]:checked')){
+        kompleksitas = document.querySelector('input[name="kompleksitas"]:checked').value;
+    }else {
+        kompleksitas = null;
+    }
+    console.log(kompleksitas);
+    
+    if (document.querySelector('input[name="waktu-delivery"]:checked')){
+        waktu_delivery = document.querySelector('input[name="waktu-delivery"]:checked').value;
+    }else {
+        waktu_delivery = null;
+    }
+    console.log(waktu_delivery);
+
+    if (document.querySelector('input[name="jumlah-tim"]:checked')){
+        jumlah_tim = document.querySelector('input[name="jumlah-tim"]:checked').value;
+    }else {
+        jumlah_tim = null;
+    }
+    console.log(jumlah_tim);
+    
+    if (document.querySelector('input[name="keterampilan-tim"]:checked')){
+        keterampilan_tim = document.querySelector('input[name="keterampilan-tim"]:checked').value;
+    }else {
+        keterampilan_tim = null;
+    }
+    console.log(keterampilan_tim);
+    
+    if (document.querySelector('input[name="klien-terlibat"]:checked')){
+        klien_terlibat = document.querySelector('input[name="klien-terlibat"]:checked').value;
+    }else {
+        keterampilan_tim = null;
+    }
+    console.log(klien_terlibat);
+    //alert('getter, dieksekusi');
 }
 
 function clear_Variable(){
@@ -55,9 +94,20 @@ function tampil(){
 
 //Running getter function to get the form value
 function decission(){
+    console.log('decission,dieksekusi')
     getter();
 
-    if (kebutuhan == "dapat-dijelaskan"){
+    if (kebutuhan == null || kompleksitas == null || waktu_delivery == null || jumlah_tim == null || keterampilan_tim == null || klien_terlibat == null){
+        /*alert(kebutuhan);
+        alert(kompleksitas);
+        alert(waktu_delivery);
+        alert(jumlah_tim);
+        alert(keterampilan_tim);
+        alert(klien_terlibat);*/
+        console.log('else terakhir');
+        alert("Harap mengisi semua form");
+    }
+    else if (kebutuhan == "dapat-dijelaskan"){
         if (kompleksitas == "sederhana"){
             if (waktu_delivery == "<1bulan"){
                 if (jumlah_tim == "<12orang"){
@@ -1073,7 +1123,7 @@ function decission(){
                         }
                     }else if (keterampilan_tim == "tidak-berpengalaman"){
                         if (klien_terlibat == "terlibat"){
-                          alert("Tidak ada metodologi yang cocok");
+                            alert("Tidak ada metodologi yang cocok");
                         }else if (klien_terlibat == "tidak-terlibat"){
                             alert("Tidak ada metodologi yang cocok");
                         }
@@ -1081,7 +1131,5 @@ function decission(){
                 }
             }
         }
-    }else if(kebutuhan == "" || kompleksitas == "" || waktu_delivery == "" || jumlah_tim == "" || keterampilan_tim == "" || klien_terlibat == ""){
-        alert("Harap mengisi semua form");
     }
 }
