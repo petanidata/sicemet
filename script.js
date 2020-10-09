@@ -24,6 +24,7 @@ function clear_Variable(){
     alert(keterampilan_tim);
     alert(klien_terlibat);
 }
+
 function tampil(){
     methode = document.getElementById("metode").value;
     if (methode == "incremental"){
